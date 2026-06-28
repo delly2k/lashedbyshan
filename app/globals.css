@@ -1,26 +1,57 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fffaf9;
+  --foreground: #1a1a1a;
+  --brand-pink: #f8e1ea;
+  --brand-blush: #e8b4bc;
+  --brand-cream: #fff5f7;
+  --brand-black: #1a1a1a;
+  --rose-gold: #c89b6e;
+  --rose-ink: #3a2329;
+  --services-bg: #faf6f7;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-brand-pink: var(--brand-pink);
+  --color-brand-blush: var(--brand-blush);
+  --color-brand-cream: var(--brand-cream);
+  --color-brand-black: var(--brand-black);
+  --color-rose-gold: var(--rose-gold);
+  --color-rose-ink: var(--rose-ink);
+  --color-services-bg: var(--services-bg);
+  --font-sans: var(--font-dm-sans);
+  --font-display: var(--font-playfair);
+  --font-script: var(--font-dancing-script);
+  --shadow-soft: 0 8px 30px rgb(232 180 188 / 0.18);
+  --shadow-card: 0 16px 40px rgb(232 180 188 / 0.22);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+  width: 100%;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  overflow-x: clip;
+  width: 100%;
+  min-height: 100%;
+}
+
+.font-display {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+.font-script {
+  font-family: var(--font-dancing-script), cursive;
 }
