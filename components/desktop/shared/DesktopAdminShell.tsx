@@ -25,8 +25,8 @@ export function DesktopAdminShell({
     <div className="min-h-screen bg-brand-cream">
       <div className="mx-auto flex min-h-screen max-w-7xl">
         <aside className="flex w-72 shrink-0 flex-col border-r border-brand-blush/30 bg-white px-6 py-8">
-          <Logo size="md" />
-          <p className="mt-2 text-sm text-brand-black/50">Admin dashboard</p>
+          <Logo size="md" className="h-12" />
+          <p className="mt-3 text-sm text-brand-black/50">Admin dashboard</p>
           <div className="mt-8 flex-1">
             <AdminSidebarNav />
           </div>

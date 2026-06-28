@@ -22,7 +22,7 @@ export function Logo({ className, size = 'md', priority = false }: LogoProps) {
       width={1280}
       height={500}
       priority={priority}
-      className={cn('w-auto', sizeStyles[size], className)}
+      className={cn('w-fit max-w-full shrink-0 object-contain', sizeStyles[size], className)}
     />
   );
 }

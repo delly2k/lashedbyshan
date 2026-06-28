@@ -42,6 +42,7 @@ function AdminLoginForm() {
         value={password}
         onChange={(event) => setPassword(event.target.value)}
         autoComplete="current-password"
+        showPasswordToggle
         required
       />
       <Button size="lg" className="w-full" disabled={isSubmitting}>
